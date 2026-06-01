@@ -1,0 +1,68 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+project_env/
+venv/
+.venv/
+env/
+ENV/
+
+# PyTorch checkpoints and weights
+checkpoints/
+*.pt
+*.pth
+
+# Datasets and cache files
+airfrans_data/
+Re_1M_data/
+NACA0012_200k/
+Re_1M.zip
+naca0012.dat
+*.h5
+*.npy
+*.npz
+!inference/canonical_surface_mapping.npz
+
+# Logs and outputs
+logs/
+*.log
+output_*.log
+wandb/
+.agents/
+.codex/
+
+# Images and plots
+*.png
+!assets/*.png
+!assets/**/*.png
+
+# Reports and local manuscript
+reports/
+
+# Results
+evaluation/results_*.json
+results/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Internal experimental & diagnostic modules (kept on local disk, excluded from GitHub repo)
+robustness/
+configs/ablations/
+configs/aerodynamic_fine_tuning.yaml
+configs/full_field_reconstruction.yaml
+configs/publication_full.yaml
+configs/publication_phase1.yaml
+configs/smoke_scarce.yaml
+data/doe_raw.py
+data/label_extraction.py
+data/sdf_compute.py
+training/sweep_loss_weights.py
+
+# Internal local scripts & scratch tools
+scratch/
+scripts/
