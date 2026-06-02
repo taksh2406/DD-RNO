@@ -1,0 +1,13 @@
+torch>=2.3
+torchvision
+torchaudio
+h5py
+numpy
+scipy
+gymnasium
+pyyaml
+scikit-learn
+pymoo
+cma
+pytest
+
