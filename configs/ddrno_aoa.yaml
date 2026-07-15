@@ -1,0 +1,29 @@
+data:
+  task: aoa
+  train_h5: airfrans_data/processed/airfrans_aoa_train.h5
+  test_h5: airfrans_data/processed/airfrans_aoa_test.h5
+  val_fraction: 0.20
+  query_points_per_sample: 2048
+  num_workers: 4
+
+model:
+  arch: ddrno
+  geom_dim: 128
+  w_dim: 64
+  hidden: 256
+  n_fourier: 8
+  n_canonical: 1024
+  inv_layers: 4
+  bl_layers: 6
+  wake_layers: 4
+
+training:
+  seed: 42
+  epochs: 1000
+  batch_size: 4
+  lr: 3.0e-4
+  weight_decay: 1.0e-4
+  adaptive_loss: false
+  lambda_field: 100.0
+  lambda_force: 10.0
+  checkpoint_dir: checkpoints/ddrno_aoa
