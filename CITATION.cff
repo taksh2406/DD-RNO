@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this work, please credit and cite our paper as below."
+authors:
+  - family-names: "Mehta"
+    given-names: "T.A."
+  - family-names: "Bhati"
+    given-names: "P.S."
+  - family-names: "Akolekar"
+    given-names: "H.D."
+title: "DD-RNO: A Domain-Decomposed Routed Neural Operator for Airfoil Flow Prediction"
+url: "https://arxiv.org/abs/2608.13490"
+date-released: 2026-08-27
+type: article
+publisher:
+  name: "arXiv"
